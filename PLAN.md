@@ -1,7 +1,13 @@
 # RuneBenchMax plan
 
-Goal: a small open-weight model (Qwen-class, ~27B or smaller) that beats untrained
-frontier models on one RuneBench task: **`firemaking-xp-30m`**.
+Goal: a small open-weight model that beats untrained frontier models on one
+RuneBench task: **`firemaking-xp-30m`**.
+
+Hackathon: Meta Global AI Developer Hackathon, Oct 26 – Nov 4 2026.
+
+Student model: **Muse Glimmer** (Meta, 30B dense, Apache 2.0, distilled from Muse
+Spark). On-theme for the hackathon and Qwen3.8-27B-sized. Fallback: Qwen3.8 27B,
+which has a published RuneBench baseline. Glimmer has none yet; we measure it.
 
 ## Why Firemaking
 
@@ -23,6 +29,10 @@ Target: beat the frontier median (~3300) reliably, averaged over 3–5 runs.
 Stretch: beat 5924.
 
 ## Budget split
+
+Muse credits are Meta Model API tokens, not compute. They can't rent a machine.
+Compute comes from RunPod or hackathon partner credits (Modal, Fireworks, Baseten;
+requested through the hackathon's credit-request channel).
 
 - **Muse credits ($150)**: investigation only. Muse (through Claude Code / opencode
   pointed at the Muse API) explores the task, finds the best method, and helps write
